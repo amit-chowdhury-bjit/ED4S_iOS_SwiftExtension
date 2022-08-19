@@ -350,11 +350,11 @@ extension String {
         return scan.scanInt(&n) && scan.isAtEnd
     }
 
-    public var isPureFloat: Bool {
-        let scan: Scanner = Scanner(string: self)
-        var n: Float = 0.0
-        return scan.scanFloat(&n) && scan.isAtEnd
-    }
+//    public var isPureFloat: Bool {
+//        let scan: Scanner = Scanner(string: self)
+//        var n: Float = 0.0
+//        return scan.scanFloat(&n) && scan.isAtEnd
+//    }
 
     /*
      var cardNumber = "1234567890123456"
