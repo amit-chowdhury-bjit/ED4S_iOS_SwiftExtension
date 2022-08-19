@@ -344,17 +344,17 @@ extension String {
        }
     
     
-    public var isPureInt: Bool {
-        let scan: Scanner = Scanner(string: self)
-        var n: Int = 0
-        return scan.scanInt(&n) && scan.isAtEnd
-    }
-
-//    public var isPureFloat: Bool {
+//    public var isPureInt: Bool {
 //        let scan: Scanner = Scanner(string: self)
-//        var n: Float = 0.0
-//        return scan.scanFloat(&n) && scan.isAtEnd
+//        var n: Int = 0
+//        return scan.scanInt(&n) && scan.isAtEnd
 //    }
+//
+////    public var isPureFloat: Bool {
+////        let scan: Scanner = Scanner(string: self)
+////        var n: Float = 0.0
+////        return scan.scanFloat(&n) && scan.isAtEnd
+////    }
 
     /*
      var cardNumber = "1234567890123456"
