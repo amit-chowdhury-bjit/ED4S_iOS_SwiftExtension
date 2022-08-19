@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		89414AFB28AB5FC5001627E6 /* UIScrollView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+extension.swift"; sourceTree = "<group>"; };
-		89680DE1269D6B2E000EF2B3 /* ED4iOSSwiftExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ED4iOSSwiftExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89680DE1269D6B2E000EF2B3 /* EDiOSSwiftExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDiOSSwiftExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89680DE4269D6B2E000EF2B3 /* Reusable_framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reusable_framework.h; sourceTree = "<group>"; };
 		89680DE5269D6B2E000EF2B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89C26B9928A6244B001C8AD4 /* UIButton+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+extension.swift"; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		89680DD7269D6B2E000EF2B3 = {
 			isa = PBXGroup;
 			children = (
-				89680DE3269D6B2E000EF2B3 /* ED4iOSSwiftExtension */,
+				89680DE3269D6B2E000EF2B3 /* EDiOSSwiftExtension */,
 				89680DE2269D6B2E000EF2B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,12 +92,12 @@
 		89680DE2269D6B2E000EF2B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				89680DE1269D6B2E000EF2B3 /* ED4iOSSwiftExtension.framework */,
+				89680DE1269D6B2E000EF2B3 /* EDiOSSwiftExtension.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		89680DE3269D6B2E000EF2B3 /* ED4iOSSwiftExtension */ = {
+		89680DE3269D6B2E000EF2B3 /* EDiOSSwiftExtension */ = {
 			isa = PBXGroup;
 			children = (
 				89680DE4269D6B2E000EF2B3 /* Reusable_framework.h */,
@@ -106,7 +106,7 @@
 				89F720BE269E908600069875 /* UIKitExtension */,
 				89F720BF269E90A000069875 /* FoundationExtension */,
 			);
-			path = ED4iOSSwiftExtension;
+			path = EDiOSSwiftExtension;
 			sourceTree = "<group>";
 		};
 		89F720BE269E908600069875 /* UIKitExtension */ = {
@@ -163,9 +163,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		89680DE0269D6B2E000EF2B3 /* ED4iOSSwiftExtension */ = {
+		89680DE0269D6B2E000EF2B3 /* EDiOSSwiftExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 89680DE9269D6B2E000EF2B3 /* Build configuration list for PBXNativeTarget "ED4iOSSwiftExtension" */;
+			buildConfigurationList = 89680DE9269D6B2E000EF2B3 /* Build configuration list for PBXNativeTarget "EDiOSSwiftExtension" */;
 			buildPhases = (
 				89680DDC269D6B2E000EF2B3 /* Headers */,
 				89680DDD269D6B2E000EF2B3 /* Sources */,
@@ -176,9 +176,9 @@
 			);
 			dependencies = (
 			);
-			name = ED4iOSSwiftExtension;
+			name = EDiOSSwiftExtension;
 			productName = Reusable_framework;
-			productReference = 89680DE1269D6B2E000EF2B3 /* ED4iOSSwiftExtension.framework */;
+			productReference = 89680DE1269D6B2E000EF2B3 /* EDiOSSwiftExtension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -196,7 +196,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 89680DDB269D6B2E000EF2B3 /* Build configuration list for PBXProject "ED4iOSSwiftExtension" */;
+			buildConfigurationList = 89680DDB269D6B2E000EF2B3 /* Build configuration list for PBXProject "EDiOSSwiftExtension" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -209,7 +209,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				89680DE0269D6B2E000EF2B3 /* ED4iOSSwiftExtension */,
+				89680DE0269D6B2E000EF2B3 /* EDiOSSwiftExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -440,7 +440,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		89680DDB269D6B2E000EF2B3 /* Build configuration list for PBXProject "ED4iOSSwiftExtension" */ = {
+		89680DDB269D6B2E000EF2B3 /* Build configuration list for PBXProject "EDiOSSwiftExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				89680DE7269D6B2E000EF2B3 /* Debug */,
@@ -449,7 +449,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		89680DE9269D6B2E000EF2B3 /* Build configuration list for PBXNativeTarget "ED4iOSSwiftExtension" */ = {
+		89680DE9269D6B2E000EF2B3 /* Build configuration list for PBXNativeTarget "EDiOSSwiftExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				89680DEA269D6B2E000EF2B3 /* Debug */,
