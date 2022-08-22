@@ -85,6 +85,7 @@
 		89680DD7269D6B2E000EF2B3 = {
 			isa = PBXGroup;
 			children = (
+				89C5B30628B3279B00FF6483 /* README.md */,
 				89680DE3269D6B2E000EF2B3 /* EDiOSSwiftExtension */,
 				89680DE2269D6B2E000EF2B3 /* Products */,
 			);
@@ -102,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				89680DE4269D6B2E000EF2B3 /* Reusable_framework.h */,
-				89C5B30628B3279B00FF6483 /* README.md */,
 				89C26B9B28A62ED0001C8AD4 /* Ref.rtf */,
 				89680DE5269D6B2E000EF2B3 /* Info.plist */,
 				89F720BE269E908600069875 /* UIKitExtension */,
