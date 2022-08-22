@@ -53,6 +53,7 @@
 		89C4C03928ACF72000889E31 /* NSAttributedString+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+extension.swift"; sourceTree = "<group>"; };
 		89C4C03B28ACFA5700889E31 /* NSIndexPath+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSIndexPath+extension.swift"; sourceTree = "<group>"; };
 		89C4C03D28ACFF1600889E31 /* UIDevice+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
+		89C5B30628B3279B00FF6483 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		89F7206B269E82F900069875 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		89F72096269E8B0900069875 /* Bundle+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+extension.swift"; sourceTree = "<group>"; };
 		89F72099269E8B2500069875 /* UITextField+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+extension.swift"; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				89680DE4269D6B2E000EF2B3 /* Reusable_framework.h */,
+				89C5B30628B3279B00FF6483 /* README.md */,
 				89C26B9B28A62ED0001C8AD4 /* Ref.rtf */,
 				89680DE5269D6B2E000EF2B3 /* Info.plist */,
 				89F720BE269E908600069875 /* UIKitExtension */,
