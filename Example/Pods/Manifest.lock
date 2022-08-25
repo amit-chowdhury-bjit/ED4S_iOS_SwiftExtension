@@ -1,0 +1,16 @@
+PODS:
+  - EDiOSSwiftExtension (1.0.0)
+
+DEPENDENCIES:
+  - EDiOSSwiftExtension (from `../EDiOSSwiftExtension`)
+
+EXTERNAL SOURCES:
+  EDiOSSwiftExtension:
+    :path: "../EDiOSSwiftExtension"
+
+SPEC CHECKSUMS:
+  EDiOSSwiftExtension: b6a9107d749c61dbca7321433f22dfa2914875ed
+
+PODFILE CHECKSUM: 5d07fdd314efe991282a03f5302d29e8efd5a9c5
+
+COCOAPODS: 1.11.3
