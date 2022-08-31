@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Data {
+public extension Data {
     
     var encodeToData: Data? {
         return self.base64EncodedData()

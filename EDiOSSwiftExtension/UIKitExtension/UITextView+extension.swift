@@ -9,8 +9,7 @@
 import Foundation
 import UIKit
 
-extension UITextView{
-    
+public extension UITextView{
     
     func setMinimumLineHeightAndLetterSpcae(lineHeight: CGFloat, with letterSpacing: CGFloat, and font: UIFont?) {
         let text = self.text

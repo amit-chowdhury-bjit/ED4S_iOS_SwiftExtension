@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Int {
+public extension Int {
     func withCommas() -> String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
@@ -27,13 +27,13 @@ extension Int {
 
 }
 
-extension Float {
+public extension Float {
     var clean: String {
        return self.truncatingRemainder(dividingBy: 1) == 0 ? String(format: "%.0f", self) : String(format: "%.2f", self)
     }
 }
 
-extension Double {
+public extension Double {
     func toInt() -> Int {
         Int(self)
     }

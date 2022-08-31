@@ -7,6 +7,6 @@
 
 import Foundation
 
-extension Bool {
+public extension Bool {
     var boolToInt: Int { return self ? 1 : 0 }
 }

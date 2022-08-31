@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     
     static var today: Date {
         let now = Date()
@@ -19,7 +19,7 @@ extension Date {
     }
 
     //  ----------------------------------------------------------------------
-    public var isToDay: Bool {
+    var isToDay: Bool {
         let nowDateStr: String = Date().dateString("yyyy-MM-dd")
         let dateStr: String = self.dateString("yyyy-MM-dd")
         
@@ -27,14 +27,14 @@ extension Date {
     }
     
     //  ----------------------------------------------------------------------
-    public var startOfDay: Date {
+    var startOfDay: Date {
         let calender = Calendar.current
         let today = calender.startOfDay(for: self)
         return today
     }
     
     //  ----------------------------------------------------------------------
-    public func dateString(_ format: String) -> String {
+    func dateString(_ format: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
@@ -43,7 +43,7 @@ extension Date {
     }
     
     //  ----------------------------------------------------------------------
-    public func systemlocalDateString(_ format: String) -> String {
+    func systemlocalDateString(_ format: String) -> String {
         let formatter: DateFormatter = DateFormatter()
         formatter.dateFormat = format
         formatter.locale = NSLocale.system

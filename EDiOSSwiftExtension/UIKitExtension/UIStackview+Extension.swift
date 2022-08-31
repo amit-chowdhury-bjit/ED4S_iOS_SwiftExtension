@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIStackView {
+public extension UIStackView {
     
     func insertSeparator(_ createSeparator: (() -> UIView)) {
         let subviews = self.arrangedSubviews

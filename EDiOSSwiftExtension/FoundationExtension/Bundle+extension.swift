@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Bundle {
+public extension Bundle {
     var displayName: String? {
         return object(forInfoDictionaryKey: "CFBundleDisplayName") as? String
     }
@@ -26,7 +26,6 @@ extension Bundle {
      ofName -> plist name
      key -> key name
      return -> value object of key either nil
-
      **/
 
     func parsePlist(ofName name: String,key:String) -> AnyObject? {

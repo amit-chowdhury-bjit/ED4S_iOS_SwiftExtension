@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIButton {
+public extension UIButton {
       // iconName - SFSymbol Name
       // size - Size of the Symbol in points
       // scale - .small, .medium, .large

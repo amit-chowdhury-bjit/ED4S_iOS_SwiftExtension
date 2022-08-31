@@ -50,31 +50,31 @@ public enum DeviceModel: CaseIterable {
 
 public extension UIDevice {
     
-    static func isIphone() -> Bool {
+     func isIphone() -> Bool {
             return UIDevice.current.userInterfaceIdiom == .phone
         }
     
-    static func isPadDevice() -> Bool {
+     func isPadDevice() -> Bool {
             return UIDevice.current.userInterfaceIdiom == .pad
         }
     
-    static var deviceType: String {
+     var deviceType: String {
             return UIDevice.current.model
         }
     
-    static var currentSystemName : String {
+     var currentSystemName : String {
             get {
                 return UIDevice.current.systemName
             }
         }
     
-    static var currentDeviceName : String {
+     var currentDeviceName : String {
             get {
                 return UIDevice.current.name
             }
         }
     
-    static var diskSpace: Int64 {
+     var diskSpace: Int64 {
             if let attrs = try? FileManager.default.attributesOfFileSystem(forPath: NSHomeDirectory()) {
                 if let space: NSNumber = attrs[FileAttributeKey.systemSize] as? NSNumber {
                     if space.int64Value > 0 {
@@ -85,7 +85,7 @@ public extension UIDevice {
             return -1
         }
     
-    static var diskSpaceFree: Int64 {
+     var diskSpaceFree: Int64 {
             if let attrs = try? FileManager.default.attributesOfFileSystem(forPath: NSHomeDirectory()) {
                 if let space: NSNumber = attrs[FileAttributeKey.systemFreeSize] as? NSNumber {
                     if space.int64Value > 0 {
@@ -96,7 +96,7 @@ public extension UIDevice {
             return -1
         }
     
-    static var diskSpaceUsed: Int64 {
+     var diskSpaceUsed: Int64 {
         let total = self.diskSpace
         let free = self.diskSpaceFree
         guard total > 0 && free > 0 else { return -1 }
@@ -106,18 +106,18 @@ public extension UIDevice {
         return used
     }
     
-    static var memoryTotal: UInt64 {
+     var memoryTotal: UInt64 {
         return ProcessInfo.processInfo.physicalMemory
     }
 
-    static func isCanCallTel() -> Bool {
+     func isCanCallTel() -> Bool {
         if let url = URL(string: "tel://") {
             return UIApplication.shared.canOpenURL(url)
         }
         return false
     }
 
-    static var deviceLanguage: String {
+     var deviceLanguage: String {
             return Bundle.main.preferredLocalizations[0]
     }
     

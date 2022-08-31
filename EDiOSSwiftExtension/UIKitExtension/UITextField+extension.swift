@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-extension UITextField {
+public extension UITextField {
 
     func addLeftTextPadding(_ padding: CGFloat) {
             let leftView = UIView()
@@ -121,7 +121,7 @@ extension UITextField {
         self.layer.masksToBounds = true
     }
 
-    open override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
 
         guard inputView != nil else {
             return action == #selector(UIResponderStandardEditActions.paste(_:)) ?

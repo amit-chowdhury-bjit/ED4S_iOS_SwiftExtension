@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension String {
+public extension String {
     
     var nilIfEmpty: String? {
             self.isEmpty ? nil : self
@@ -250,35 +250,35 @@ extension String {
     
     //  ----------------------------------------------------------------------
     /// The last path component of the receiver.
-    public var lastPathComponent: String {
+    var lastPathComponent: String {
         return ns.lastPathComponent
     }
     
     //  ----------------------------------------------------------------------
     /// The path extension, if any, of the string as interpreted as a path.
-    public var pathExtension: String {
+    var pathExtension: String {
         return ns.pathExtension
     }
     
     //  ----------------------------------------------------------------------
     /// A new string made by deleting the last path component from the receiver, along with any final path separator.
-    public var deletingLastPathComponent: String {
+    var deletingLastPathComponent: String {
         return ns.deletingLastPathComponent
     }
     
     //  ----------------------------------------------------------------------
     /// A new string made by deleting the extension (if any, and only the last) from the receiver.
-    public var deletingPathExtension: String {
+    var deletingPathExtension: String {
         return ns.deletingPathExtension
     }
     
     //  ----------------------------------------------------------------------
     /// The file-system path components of the receiver.
-    public var pathComponents: [String] {
+    var pathComponents: [String] {
         return ns.pathComponents
     }
 
-    public static func addComma(_ value: Int, maximumFractionDigits: Int = 0) -> String {
+    func addComma(_ value: Int, maximumFractionDigits: Int = 0) -> String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
         numberFormatter.groupingSeparator = ","
@@ -336,7 +336,7 @@ extension String {
         return result
     }
 
-    public var isDecimalDigits: Bool {
+    var isDecimalDigits: Bool {
            if isEmpty {
                return false
            }

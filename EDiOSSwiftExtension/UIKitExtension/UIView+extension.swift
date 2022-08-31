@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UIView {
+public extension UIView {
     /// Helper method to init and setup the view from the Nib.
     func xibSetup() {
         let view = loadFromNib()
@@ -58,11 +58,11 @@ extension UIView {
             layer.masksToBounds = false
             layer.cornerRadius = self.frame.height / 2
             clipsToBounds = true
-        }
+    }
 
 
     //MARK:-elevated
-    public func elevated() {
+    func elevated() {
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOffset = CGSize(width: 0, height: 3)
         self.layer.shadowOpacity = 0.2
@@ -70,7 +70,7 @@ extension UIView {
     }
     
     //MARK:- Card View
-    public func makeItCard() {
+    func makeItCard() {
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOffset = CGSize(width: 0, height: 3)
         self.layer.shadowOpacity = 0.7
@@ -78,7 +78,7 @@ extension UIView {
     }
     
     //MARK:- View to Circular
-    public func makeItCircular (viewPadding : CGFloat = 0.0){
+    func makeItCircular (viewPadding : CGFloat = 0.0){
         self.layer.cornerRadius = 0.5 * (self.bounds.size.width+viewPadding)
     }
 
@@ -96,8 +96,6 @@ extension UIView {
           layer.shadowRadius = shadowRadius
     }
 
-    
-    
     //------------------------
     //MARK:- Animation
     func crossDissolve(duration: TimeInterval = 0.25,
@@ -168,6 +166,4 @@ extension UIView {
         imgView.backgroundColor = UIColor.clear
         return imgView
     }
-
-
 }

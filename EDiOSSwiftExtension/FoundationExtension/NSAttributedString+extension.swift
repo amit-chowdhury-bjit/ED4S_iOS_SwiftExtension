@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension NSAttributedString {
+public extension NSAttributedString {
     func height(withConstrainedWidth width: CGFloat) -> CGFloat {
         let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
         let boundingBox = boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, context: nil)
