@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "13.0"
   spec.source       = { :git => "https://github.com/amit-chowdhury-bjit/EDiOSSwiftExtension.git", :tag => spec.version.to_s}
 
-  spec.source_files  = "UIKitExtension/*.{swift}", "FoundationExtension/*.{swift}"
+  spec.source_files  = "Extensions/**/*.{swift}"
   spec.swift_version = "5.0"
 
 end
