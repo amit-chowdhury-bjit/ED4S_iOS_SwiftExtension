@@ -1,10 +1,10 @@
-/*********************************************
- *
- * This code is under the MIT License (MIT)
- *
- * Copyright (c) 2016 AliSoftware
- *
- *********************************************/
+
+//  UITableView+extension.swift
+//  Reusable_framework
+//
+//  Created by BJIT on 16/8/22.
+//
+
 
 #if canImport(UIKit)
 import UIKit
@@ -109,5 +109,130 @@ public extension UITableView {
       }
       return view
   }
+
+    func estimatedRowHeight(_ height: CGFloat) {
+        self.rowHeight = UITableView.automaticDimension
+        self.estimatedRowHeight = height
+    }
+    
+    /// Hide empty cells
+    func hideEmptyCells() {
+        self.tableFooterView = UIView(frame: .zero)
+    }
+    
+    /// Retrive all the IndexPaths for the section.
+        ///
+        /// - Parameter section: The section.
+        /// - Returns: Return an array with all the IndexPaths.
+    func indexPaths(section: Int) -> [IndexPath] {
+            var indexPaths: [IndexPath] = []
+            let rows: Int = self.numberOfRows(inSection: section)
+            for i in 0 ..< rows {
+                let indexPath: IndexPath = IndexPath(row: i, section: section)
+                indexPaths.append(indexPath)
+            }
+            
+            return indexPaths
+        }
+        
+        /// Retrive the next index path for the given row at section.
+        ///
+        /// - Parameters:
+        ///   - row: Row of the index path.
+        ///   - section: Section of the index path
+        /// - Returns: Returns the next index path.
+        func nextIndexPath(row: Int, forSection section: Int) -> IndexPath? {
+            let indexPath: [IndexPath] = self.indexPaths(section: section)
+            guard indexPath != [] else {
+                return nil
+            }
+            
+            return indexPath[row + 1]
+        }
+        
+        /// Retrive the previous index path for the given row at section
+        ///
+        /// - Parameters:
+        ///   - row: Row of the index path.
+        ///   - section: Section of the index path.
+        /// - Returns: Returns the previous index path.
+        func previousIndexPath(row: Int, forSection section: Int) -> IndexPath? {
+            let indexPath: [IndexPath] = self.indexPaths(section: section)
+            guard indexPath != [] else {
+                return nil
+            }
+            
+            return indexPath[row - 1]
+        }
+
+     func reloadData(_ completion: @escaping ()->()) {
+        UIView.animate(withDuration: 0, animations: {
+            self.reloadData()
+        }, completion:{ _ in
+            completion()
+        })
+    }
+    
+    
+    func insertRowsAtBottom(_ rows: [IndexPath]) {
+        UIView.setAnimationsEnabled(false)
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        self.beginUpdates()
+        self.insertRows(at: rows, with: .none)
+        self.endUpdates()
+        self.scrollToRow(at: rows[0], at: .bottom, animated: false)
+        CATransaction.commit()
+        UIView.setAnimationsEnabled(true)
+    }
+    
+    func totalRows() -> Int {
+        var i = 0
+        var rowCount = 0
+        while i < self.numberOfSections {
+            rowCount += self.numberOfRows(inSection: i)
+            i += 1
+        }
+        return rowCount
+    }
+    
+    var lastIndexPath: IndexPath? {
+        if (self.totalRows()-1) > 0{
+            return IndexPath(row: self.totalRows()-1, section: 0)
+        } else {
+            return nil
+        }
+    }
+    
+    //Called after inserting data
+    func scrollBottomWithoutFlashing() {
+        guard let indexPath = self.lastIndexPath else {
+            return
+        }
+        UIView.setAnimationsEnabled(false)
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        self.scrollToRow(at: indexPath, at: .bottom, animated: false)
+        CATransaction.commit()
+        UIView.setAnimationsEnabled(true)
+    }
+    
+    // Called after the keyboard animation ends
+    func scrollBottomToLastRow() {
+        guard let indexPath = self.lastIndexPath else {
+            return
+        }
+        self.scrollToRow(at: indexPath, at: .bottom, animated: false)
+    }
+
+    var isContentInsetBottomZero: Bool {
+        get { return self.contentInset.bottom == 0 }
+    }
+    
+    func resetContentInsetAndScrollIndicatorInsets() {
+        self.contentInset = UIEdgeInsets.zero
+        self.scrollIndicatorInsets = UIEdgeInsets.zero
+    }
+
 }
 #endif
