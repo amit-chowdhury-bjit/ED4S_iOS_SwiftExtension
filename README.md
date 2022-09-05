@@ -91,18 +91,121 @@
  #### Foundation Extensions ####   
           
               1. String
+                 - nilIfEmpty
+                 - htmlToAttributedString
+                 - htmlToString
+                 - isValidEmail
+                 - containsOnlyDigits
+                 - containsOnlyLetters
+                 - isAlphanumeric
+                 - isAlphanumericLageSmall
+                 - wordCount
+                 - replacingOccurrences
+                 - truncate
+                 - withPrefix
+                 - underLineMutableString
+                 - convertToMutableString
+                 - formatPhoneNumber
+                 - withCommas
+                 - extractNumber
+                 - extractEmail
+                 - getTextHeight
+                 - lastPathComponent
+                 - pathExtension
+                 - deletingLastPathComponent
+                 - deletingPathExtension
+                 - pathComponents
+                 - addComma
+                 - stringToFloat
+                 - stringToDouble
+                 - trimmed
+                 - asURL
+                 - inserting
+                 - isDecimalDigits
               2. NSAttributedString
+                 - height
+                 - width
               3. NSIndexPath
+                 - sectionNRowString
+                 - previousRow
+                 - nextRow
               4. Bool
+                 - boolToInt
               5. Data 
+                 - encodeToData
+                 - decodeToDada
+                 - bytes
               6. Date
+                 - today
+                 - isToDay
+                 - startOfDay
+                 - dateString
+                 - systemlocalDateString
+                 - weekdayName
+                 - dayNumberOfWeek
+                 - year
+                 - yesterday
+                 - tomorrow
+                 - noon
+                 - month
+                 - isLastDayOfMonth
+                 - previousWeek
+                 - nextWeek
+                 - previousMonth
+                 - nextMonth
+                 - previousYear
+                 - nextYear
+                 - numberOfDaysInMonth
+                 - begainOfDay
+                 - endOfDay
+                 - startOfMonth
+                 - endOfMonth
+                 - dateStartAtzero
+                 - toString
+                 - secondStamp
+                 - milliStamp
               7. Dictionary
-              8. Double
-              9. FileManager
-             10. Bundle
-             11. Int
+                 - has
+                 - toArray
+                 - jsonToDictionary
+                 - toJSON
+              8. FileManager
+                 - save
+                 - create
+                 - delete
+                 - rename
+                 - copy
+                 - home
+                 - document
+                 - library
+                 - temp
+                 - caches
+                 - preferences
+             9. Bundle
+                 - displayName
+                 - appVersion
+                 - parsePlist
+                 - decode
+             10. Int
+                - withCommas
+                - boolValue
+                - toDouble
+                - toString
+             11. Double 
+                - toString
+                - toInt
+                - roundTo
              12. UIColor
+                - red: Int, green: Int, blue: Int, alpha: CGFloat = 1.0
+                - hexCode: String, alpha: CGFloat = 1.0
              13. Array
+                - element
+                - totalCharacterCount
+                - wordCount
+                - wordCharacterCount
+                - sum
+                - string
+                - characterCount
              
   ### Installation ###
  ---
