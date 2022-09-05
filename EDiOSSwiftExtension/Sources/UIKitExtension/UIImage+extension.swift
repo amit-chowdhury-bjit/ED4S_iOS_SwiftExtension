@@ -319,7 +319,7 @@ public extension UIImage {
         ///   - rate: The resize rate. Positive to enlarge, negative to shrink. Defaults to medium.
         ///   - quality: The interpolation quality.
         /// - Returns: The resized image.
-        public func resizedImage(by rate: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
+    func resizedImage(by rate: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
             let width = self.size.width * rate
             let height = self.size.height * rate
             let size = CGSize(width: width, height: height)

@@ -76,10 +76,10 @@ public extension UITextField {
         return text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
 
-    func setShowAndHideButton(){
+    func setShowAndHideButton(hidePasswordImage: String, showPasswordImage:String){
         let widthOrHeightOfImage: CGFloat = 50
         let button = UIButton(type: .custom)
-        button.setImage(UIImage(named: "hidePassword"), for: .normal)
+        button.setImage(UIImage(named: hidePasswordImage), for: .normal)
         button.imageEdgeInsets = UIEdgeInsets(top: CGFloat.zero, left: CGFloat.zero, bottom: CGFloat.zero, right: CGFloat.zero)
         button.frame = CGRect(x: CGFloat(self.frame.size.width - widthOrHeightOfImage), y: CGFloat(CGFloat.zero), width: CGFloat(widthOrHeightOfImage), height: CGFloat(widthOrHeightOfImage))
         self.isSecureTextEntry = true
@@ -90,7 +90,7 @@ public extension UITextField {
         self.keyboardType = .asciiCapable;
     }
 
-    @objc func showOrHide(){
+    @objc func showOrHide(hidePasswordImage: String, showPasswordImage:String){
         if self.isSecureTextEntry{
             let button = self.rightView as! UIButton
             button.setImage(UIImage(named: "showPassword"), for: .normal)

@@ -28,4 +28,12 @@ public extension Double {
         return (self * divisor).rounded() / divisor
     }
 
+    func toInt() -> Int {
+        Int(self)
+    }
+    
+    func toString() -> String {
+        String(format: "%.02f", self)
+    }
+
 }

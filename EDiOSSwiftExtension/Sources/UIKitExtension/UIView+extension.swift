@@ -153,15 +153,15 @@ public extension UIView {
             }
         }
     
-    func rightValidAccessoryView() -> UIView {
-        let imgView = UIImageView(image: UIImage(named: "check_valid"))
+    func rightValidAccessoryView(validImageName:String) -> UIView {
+        let imgView = UIImageView(image: UIImage(named: validImageName))
         imgView.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         imgView.backgroundColor = UIColor.clear
         return imgView
     }
     
-    func rightInValidAccessoryView() -> UIView {
-        let imgView = UIImageView(image: UIImage(named: "check_invalid"))
+    func rightInValidAccessoryView(invalidImageName:String) -> UIView {
+        let imgView = UIImageView(image: UIImage(named: invalidImageName))
         imgView.frame = CGRect(x: self.cornerRadius, y: self.cornerRadius, width: 20, height: 20)
         imgView.backgroundColor = UIColor.clear
         return imgView

@@ -24,8 +24,8 @@ public extension UIScrollView {
     }
 
     ///  YES if the scrollView can scroll from it's current offset position to the bottom.
-        var canScrollToBottom: Bool {
-            get { return self.contentSize.height > self.bounds.size.height ? true : false }
-        }
+    var canScrollToBottom: Bool {
+        get { return self.contentSize.height > self.bounds.size.height ? true : false }
+    }
 }
 
