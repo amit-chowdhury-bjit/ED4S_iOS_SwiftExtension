@@ -14,6 +14,8 @@
               7. UIStackView
               8. UIDevice
               9. UITextView
+             10. UIViewController
+             11. 
  #### Foundation Extensions ####   
           
               1. String
@@ -38,4 +40,4 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Swift extension into your Xcode project using CocoaPods, specify it in your Podfile:
 
 
- `pod 'EDiOSSwiftExtension'                                                                      `
+ `pod 'EDiOSSwiftExtension'                                                                 `
