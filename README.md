@@ -6,16 +6,88 @@
  #### UIKit Extensions #### 
  
               1. UITableView
+                   - register
+                   - dequeueReusableCell
+                   - dequeueReusableHeaderFooterView
+                   - estimatedRowHeight
+                   - hideEmptyCells
+                   - indexPaths
+                   - nextIndexPath
+                   - previousIndexPath
+                   - reloadData
+                   - insertRowsAtBottom
+                   - totalRows
+                   - lastIndexPath
+                   - scrollBottomWithoutFlashing
+                   - scrollBottomToLastRow
+                   - isContentInsetBottomZero
+                   - resetContentInsetAndScrollIndicatorInsets
+                   
               2. UICollectionView
+                   - register
+                   - dequeueReusableCell
+
               3. UIButton
+                   - setSFSymbol
+                   - centerTitleVertically
               4. UIImage
+                   - fixImageOrientation
+                   - imageWithColor
+                   - trim
+                   - maskWithColor
+                   - squared
+                   - resized
+                   - resizeImageTo
+                   - imageByApplayingAlpha
+                   - cropWithCropRect
+                   - drawTextInImage
+                   - checkImageDataType
+                   - resizedImage
+                   - imageQRCode
               5. UITextField
+                   - addLeftTextPadding
+                   - setRightPaddingPoints
+                   - addLeftIcon
+                   - validateDigits
+                   - validatePassword
+                   - validSearchKeyword
+                   - removeWhitespacesAndNewLines
+                   - setShowAndHideButton
+                   - setBorder
+                   - moveCursor
               6. UIView
+                   - xibSetup
+                   - stretch
+                   - addCornerRadius
+                   - addBorderLine
+                   - makeRounded
+                   - elevated
+                   - makeItCard
+                   - makeItCircular
+                   - addShadow
+                   - crossDissolve
+                   - rightValidAccessoryView
+                   - rightInValidAccessoryView
               7. UIStackView
+                   - insertSeparator
+                   - separator
+                   - removeFully
               8. UIDevice
+                  - isIphone
+                  - isPadDevice
+                  - isCanCallTel
+                  - diskSpace
+                  - diskSpaceFree
+                  - diskSpaceUsed
+                  - memoryTotal
+                  - deviceLanguage
               9. UITextView
+                  - setMinimumLineHeightAndLetterSpcae
              10. UIViewController
-             11. 
+                  - isModal
+                  - findChildViewControllerOfType
+                  - hideKeyboardWhenTappedAround
+                  
  #### Foundation Extensions ####   
           
               1. String
